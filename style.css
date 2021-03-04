@@ -1,0 +1,139 @@
+/**
+Theme Name: Morten Astra Child
+Author: Morten Gedsted Hansen
+Author URI: https://mortengh.dk
+Description: Child Theme for Astra
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+/*-------General-------*/
+.main-header-bar {
+    position: fixed;
+    width: 100%;
+}
+
+.main-header-menu a:hover {
+    color: #ffdf6c !important;
+}
+
+.main-header-bar.header-background {
+    background: #202020 !important;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+
+
+
+/*-ADDING STROKE TO HEADERS-*/
+.elementor-1275 .elementor-element.elementor-element-98c1bb3 .elementor-heading-title,
+.elementor-1275 .elementor-element.elementor-element-9137888 .elementor-heading-title,
+.elementor-1277 .elementor-element.elementor-element-c828001 .elementor-heading-title,
+.elementor-1276 .elementor-element.elementor-element-08960a8 .elementor-heading-title,
+.elementor-1279 .elementor-element.elementor-element-abe1cd6 .elementor-heading-title,
+.elementor-1940 .elementor-element.elementor-element-51a4f62 .elementor-heading-title {
+    -webkit-text-stroke: 2px white;
+}
+
+.elementor-1275 .elementor-element.elementor-element-6974dc0 .elementor-heading-title,
+.elementor-1279 .elementor-element.elementor-element-4d4da83 .elementor-heading-title,
+.elementor-1276 .elementor-element.elementor-element-491c303 .elementor-heading-title,
+.elementor-1275 .elementor-element.elementor-element-c8dd22c .elementor-heading-title,
+.elementor-1275 .elementor-element.elementor-element-bfa1e1e .elementor-heading-title,
+.elementor-1940 .elementor-element.elementor-element-bfa1e1e .elementor-heading-title {
+    -webkit-text-stroke: 2px black;
+}
+
+.ast-theme-transparent-header .main-header-menu .menu-item:hover>.menu-link,
+.ast-theme-transparent-header .main-header-menu .menu-item:hover>.ast-menu-toggle,
+.ast-theme-transparent-header .main-header-menu .ast-masthead-custom-menu-items a:hover,
+.ast-theme-transparent-header .main-header-menu .focus>.menu-link,
+.ast-theme-transparent-header .main-header-menu .focus>.ast-menu-toggle,
+.ast-theme-transparent-header .main-header-menu .current-menu-item>.menu-link,
+.ast-theme-transparent-header .main-header-menu .current-menu-ancestor>.menu-link,
+.ast-theme-transparent-header .main-header-menu .current-menu-item>.ast-menu-toggle,
+.ast-theme-transparent-header .main-header-menu .current-menu-ancestor>.ast-menu-toggle,
+.ast-theme-transparent-header [CLASS*="ast-builder-menu-"] .main-header-menu .current-menu-item>.menu-link,
+.ast-theme-transparent-header [CLASS*="ast-builder-menu-"] .main-header-menu .current-menu-ancestor>.menu-link,
+.ast-theme-transparent-header [CLASS*="ast-builder-menu-"] .main-header-menu .current-menu-item>.ast-menu-toggle,
+.ast-theme-transparent-header [CLASS*="ast-builder-menu-"] .main-header-menu .current-menu-ancestor>.ast-menu-toggle {
+    color: #ffdf6c;
+}
+
+
+
+.ast-theme-transparent-header .site-title a,
+.ast-theme-transparent-header .site-title a:focus,
+.ast-theme-transparent-header .site-title a:hover,
+.ast-theme-transparent-header .site-title a:visited {
+    color: #ffdf6c;
+}
+
+
+.ast-button-wrap .menu-toggle {
+    border: 2px solid #202020;
+}
+
+/* ---------- scroll to the top ---------- */
+#scrollTop {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 30px;
+    border: 2px solid #ffdf6c;
+    outline: none;
+    background-color: #ffdf6c;
+    color: #202020;
+    cursor: pointer;
+    padding: 7px 20px 0px 20px;
+    border-radius: 5px;
+}
+
+#scrollTop:hover {
+    background-color: white;
+    border: 2px solid #202020;
+}
+
+
+/*---CHANGES COLOR OF TABLET AND MOBILE NAVBAR---*/
+@media (max-width: 544px) {
+
+    .ast-theme-transparent-header.ast-header-break-point .main-header-menu,
+    .ast-theme-transparent-header.ast-header-break-point .ast-builder-menu .main-header-menu .sub-menu,
+    .ast-theme-transparent-header.ast-header-break-point .ast-builder-menu .main-header-menu,
+    .ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-menu,
+    .ast-flyout-menu-enable.ast-header-break-point.ast-theme-transparent-header .main-header-bar-navigation #site-navigation,
+    .ast-fullscreen-menu-enable.ast-header-break-point.ast-theme-transparent-header .main-header-bar-navigation #site-navigation,
+    .ast-flyout-above-menu-enable.ast-header-break-point.ast-theme-transparent-header .ast-above-header-navigation-wrap .ast-above-header-navigation,
+    .ast-flyout-below-menu-enable.ast-header-break-point.ast-theme-transparent-header .ast-below-header-navigation-wrap .ast-below-header-actual-nav,
+    .ast-fullscreen-above-menu-enable.ast-header-break-point.ast-theme-transparent-header .ast-above-header-navigation-wrap,
+    .ast-fullscreen-below-menu-enable.ast-header-break-point.ast-theme-transparent-header .ast-below-header-navigation-wrap {
+        background-color: #202020;
+    }
+}
+
+;
+
+@media (max-width: 921px) {
+
+    .ast-theme-transparent-header.ast-header-break-point .main-header-menu,
+    .ast-theme-transparent-header.ast-header-break-point .ast-builder-menu .main-header-menu .sub-menu,
+    .ast-theme-transparent-header.ast-header-break-point .ast-builder-menu .main-header-menu,
+    .ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-menu,
+    .ast-flyout-menu-enable.ast-header-break-point.ast-theme-transparent-header .main-header-bar-navigation #site-navigation,
+    .ast-fullscreen-menu-enable.ast-header-break-point.ast-theme-transparent-header .main-header-bar-navigation #site-navigation,
+    .ast-flyout-above-menu-enable.ast-header-break-point.ast-theme-transparent-header .ast-above-header-navigation-wrap .ast-above-header-navigation,
+    .ast-flyout-below-menu-enable.ast-header-break-point.ast-theme-transparent-header .ast-below-header-navigation-wrap .ast-below-header-actual-nav,
+    .ast-fullscreen-above-menu-enable.ast-header-break-point.ast-theme-transparent-header .ast-above-header-navigation-wrap,
+    .ast-fullscreen-below-menu-enable.ast-header-break-point.ast-theme-transparent-header .ast-below-header-navigation-wrap {
+        background-color: #202020;
+    }
+}
+
+;
